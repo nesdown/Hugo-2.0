@@ -18,5 +18,3 @@ def check_api_commands():
 
   else:
     logger.log("NOT ERASED", "c")
-
-check_api_commands()
