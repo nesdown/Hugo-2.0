@@ -52,4 +52,4 @@ def start_speech():
     print(str(e))
     speech_generation.global_speech("Обратитесь к консультанту, мне чего-то плоховато")
 
-eel.start('launcher.html', cmdline_args=['--start-fullscreen', '--browser-startup-dialog'], geometry={'size': (1920, 1080), 'position': (0, 0)})
+eel.start('loader.html', cmdline_args=['--start-fullscreen', '--browser-startup-dialog'], geometry={'size': (1920, 1080), 'position': (0, 0)})
