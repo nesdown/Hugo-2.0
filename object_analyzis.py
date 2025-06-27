@@ -14,6 +14,13 @@ from speech_generation import global_speech
 
 translator = Translator()
 
+# ==============================================================================
+# OBJECT ANALYSIS MODULE
+# ==============================================================================
+# Computer vision system for real-time object detection and analysis
+# Uses camera input to identify and describe objects in the environment
+# ==============================================================================
+
 def take_photo(camera_number):
   # initialize the camera
   cam = VideoCapture(camera_number)   # 0 -> index of camera
@@ -48,6 +55,27 @@ def generate_results(label):
 
 
 def provide_dialog():
+    """
+    Main object analysis dialog function combining computer vision and speech
+    
+    Features:
+        - Real-time camera-based object detection
+        - AI-powered object identification and classification
+        - Natural language description of detected objects
+        - Voice interaction for analysis requests
+        
+    Workflow:
+        1. Capture image from camera
+        2. Process image through object detection models
+        3. Identify and classify detected objects
+        4. Generate descriptive text about the scene
+        5. Deliver analysis via text-to-speech synthesis
+        
+    Technologies:
+        - OpenCV for image processing
+        - Computer vision models for object detection
+        - Natural language generation for descriptions
+    """
     global_speech("Приступаю к анализу окружающей обстановки через 3...")
     sleep(1)
     global_speech("два...")
